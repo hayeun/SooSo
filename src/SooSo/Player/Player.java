@@ -1,4 +1,4 @@
-package SooSo.player;
+package SooSo.Player;
 
 public class Player {
 
@@ -65,11 +65,11 @@ public class Player {
 		return games;
 	}
 
-	private String name; //이름
-	private String team; //소속팀
-	private int birth; //생년월일
-	private byte backNumber; //등번호
-	private float average; //투수: 방어율, 타자: 타율
-	private short games; //출전게임수
+	private String name; //
+	private String team; //
+	private int birth; //
+	private byte backNumber; //
+	private float average; //
+	private short games; //
 
 }

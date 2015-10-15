@@ -1,4 +1,4 @@
-package SooSo.player;
+package SooSo.Player;
 
 public class Hitter extends Player {
 
@@ -183,23 +183,23 @@ public class Hitter extends Player {
 		return errors;
 	}
 
-	private short atBats; // 타수
-	private short runs; // 득점
-	private short hits; // 안타
-	private short singles; // 단타
-	private byte doubles; // 2루타
-	private byte triples; // 3루타
-	private byte homeRuns; // 홈런
-	private short runsBattedIn; // 타점
-	private byte sacrificeHits; // 희생번트
-	private byte sacrificeFlys; // 희생플라이
-	private byte stolenBases; // 도루
-	private byte caughtStealing; // 도루실패
-	private byte walks; // 볼넷
-	private byte intentionalWalks; // 고의사구
-	private byte hitByPitch; // 몸에맞는공
-	private short strikeouts; // 삼진
-	private byte groundIntoDoublePlay; // 병살
-	private float OPS; // 출루율 + 장타율
-	private byte errors; // 실책
+	private short atBats; //
+	private short runs; //
+	private short hits; //
+	private short singles; //
+	private byte doubles; //
+	private byte triples; //
+	private byte homeRuns; //
+	private short runsBattedIn; //
+	private byte sacrificeHits; //
+	private byte sacrificeFlys; //
+	private byte stolenBases; //
+	private byte caughtStealing; //
+	private byte walks; //
+	private byte intentionalWalks; //
+	private byte hitByPitch; //
+	private short strikeouts; //
+	private byte groundIntoDoublePlay; //
+	private float OPS; //
+	private byte errors; //
 }

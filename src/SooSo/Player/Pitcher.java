@@ -1,4 +1,4 @@
-package SooSo.player;
+package SooSo.Player;
 
 public class Pitcher extends Player {
 
@@ -209,27 +209,27 @@ public class Pitcher extends Player {
 		return battersGroundedIntoDoublePlays;
 	}
 
-	private float innings; // 던진 이닝
-	private float ERA; // 방어율
-	private byte wins; // 승
-	private byte losses; // 패
-	private byte completedGames; // 완투
-	private byte shutouts; // 완봉승
-	private byte saves; // 세이브
-	private byte holds; // 홀드
-	private byte blownSaves; // 블론세이브
-	private short outs; // 아웃
-	private short hits; // 피안타
-	private short runs; // 실점
-	private short earnedRuns; // 자책점
-	private byte homeRuns; // 피홈런
-	private byte walks; // 볼넷허용
-	private byte intentionalWalks; // 고의사구
-	private byte hitBatters; // 몸에맞는볼
-	private byte strikeouts; // 삼진
-	private byte wildPitches; // 와일드피치
-	private byte balks; // 보크
-	private byte baseAllowed; // 도루허용
-	private byte battersGroundedIntoDoublePlays; // 병살타유도
+	private float innings; // �뜕吏� �씠�떇
+	private float ERA; // 諛⑹뼱�쑉
+	private byte wins; // �듅
+	private byte losses; // �뙣
+	private byte completedGames; // �셿�닾
+	private byte shutouts; // �셿遊됱듅
+	private byte saves; // �꽭�씠釉�
+	private byte holds; // ���뱶
+	private byte blownSaves; // 釉붾줎�꽭�씠釉�
+	private short outs; // �븘�썐
+	private short hits; // �뵾�븞��
+	private short runs; // �떎�젏
+	private short earnedRuns; // �옄梨낆젏
+	private byte homeRuns; // �뵾�솃�윴
+	private byte walks; // 蹂쇰꽬�뿀�슜
+	private byte intentionalWalks; // 怨좎쓽�궗援�
+	private byte hitBatters; // 紐몄뿉留욌뒗蹂�
+	private byte strikeouts; // �궪吏�
+	private byte wildPitches; // ���씪�뱶�뵾移�
+	private byte balks; // 蹂댄겕
+	private byte baseAllowed; // �룄猷⑦뿀�슜
+	private byte battersGroundedIntoDoublePlays; // 蹂묒궡���쑀�룄
 
 }
