@@ -1,4 +1,4 @@
-package SooSo.game;
+package SooSo.Game;
 
 public class Game {
 

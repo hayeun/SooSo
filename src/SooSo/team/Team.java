@@ -1,4 +1,4 @@
-package SooSo.team;
+package SooSo.Team;
 
 public class Team {
 

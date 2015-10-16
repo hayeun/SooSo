@@ -1,5 +1,7 @@
 import java.awt.EventQueue;
 
+import SooSo.Application.Application;
+
 public class SooSo {
 
 	public static void main(String[] args) {
