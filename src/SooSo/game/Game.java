@@ -17,6 +17,19 @@ public class Game {
 		setAwayError(awayError);
 	}
 
+	public Game() {
+		setDate(0);
+		setHomeTeam(null);
+		setAwayTeam(null);
+		setField(null);
+		setHomeScore((byte) 0);
+		setAwayScore((byte) 0);
+		setHomeHit((byte) 0);
+		setAwayHit((byte) 0);
+		setHomeError((byte) 0);
+		setAwayError((byte) 0);
+	}
+
 	// setter
 	public void setDate(int date) {
 		this.date = date;
