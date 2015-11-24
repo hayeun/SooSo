@@ -1,9 +1,6 @@
-
+import weka.core.Instances;
 import java.sql.*;
 import java.io.File; 
-
-//import java.util.*;
-
 
 public class KBO {
 

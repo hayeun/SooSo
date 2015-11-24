@@ -34,12 +34,12 @@ public class Panel_Plan_Result {
 		table.setRowSorter(sorter);
 
 		try {
-			Connecter con = new Connecter();
-			con.connectDatabase();
+			DBConnecter con = new DBConnecter();
+			con.connectDatabase("select * from game where game.date >'2015-03-01'");
 			ResultSet rs = con.getResultSet();
-
+			
 			while (rs.next()) {
-				Object[] temporaryObject = { rs.getInt(2), rs.getString(3), rs.getString(4), rs.getInt(5),
+				Object[] temporaryObject = { rs.getDate(2), rs.getString(3), rs.getString(4), rs.getInt(5),
 						rs.getInt(6) };
 				model.addRow(temporaryObject);
 			}

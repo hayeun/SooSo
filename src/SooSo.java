@@ -1,7 +1,7 @@
 import java.awt.EventQueue;
 
 import SooSo.Application.Application;
-import SooSo.Application.Connecter;
+import SooSo.Application.DBConnecter;
 
 public class SooSo {
 

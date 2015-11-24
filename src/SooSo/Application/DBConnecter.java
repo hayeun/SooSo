@@ -8,12 +8,12 @@ import java.sql.Statement;
 
 import SooSo.Game.Game;
 
-public class Connecter {
+public class DBConnecter {
 	Connection conn = null;
 	Statement stmt = null;
 	ResultSet rs = null;
 
-	public void connectDatabase() throws SQLException {
+	public void connectDatabase(String query) throws SQLException {
 		try {
 
 			Class.forName("com.mysql.jdbc.Driver");
@@ -26,7 +26,6 @@ public class Connecter {
 		String url = "jdbc:mysql://127.0.0.1:3306/KBODB";// localhost, 127.0.0.1
 		String id = "root";
 		String pass = "qogkdus12!@";
-		String query = "select * from game";
 
 		conn = DriverManager.getConnection(url, id, pass);
 		stmt = conn.createStatement();
