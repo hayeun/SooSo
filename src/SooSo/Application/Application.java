@@ -19,13 +19,14 @@ public class Application extends JFrame {
 	private JPanel panelPlanResult;
 	private JPanel panelTeamRecord;
 	private JPanel panelPlayerRecord;
-	private JPanel panelPrediction;
+	private JPanel panelPredictionWEKA;
+	private JPanel panelPredictionR;
 	
-	public Application() {
+	public Application() throws Exception {
 		initUI();
 	}
 
-	private void initUI() {
+	private void initUI() throws Exception {
 		createMenuBar(); // menu bar creating
 		this.createTabPane(); // Panel creating
 
@@ -71,22 +72,25 @@ public class Application extends JFrame {
 		menubar.add(help);
 	}
 
-	private void createTabPane() {
+	private void createTabPane() throws Exception {
 		tabbedPane = new JTabbedPane();
 		panelPlanResult = new JPanel(new BorderLayout());
 		panelTeamRecord = new JPanel();
 		panelPlayerRecord = new JPanel();
-		panelPrediction = new JPanel();
+		panelPredictionWEKA = new JPanel();
+		panelPredictionR = new JPanel();
 
 		Panel_Plan_Result.create(panelPlanResult);
 		Panel_TeamRecord.create(panelTeamRecord);
 		Panel_PlayerRecord.create(panelPlayerRecord);
-		Panel_Prediction.create(panelPrediction);
+		Panel_Prediction_WEKA.create(panelPredictionWEKA);
+		Panel_Prediction_R.create(panelPredictionR);
 
 		tabbedPane.add("Plan/Result", panelPlanResult);
 		tabbedPane.add("Team Record", panelTeamRecord);
 		tabbedPane.add("Player Record", panelPlayerRecord);
-		tabbedPane.add("Prediction", panelPrediction);
+		tabbedPane.add("WEKA_Prediction", panelPredictionWEKA);
+		tabbedPane.add("R_Prediction", panelPredictionR);
 		tabbedPane.setTabPlacement(JTabbedPane.TOP);
 	}
 }

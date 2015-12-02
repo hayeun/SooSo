@@ -1,22 +1,16 @@
 package SooSo.Application;
 
-import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 
 import rcaller.RCaller;
 
-public class Panel_Prediction {
+public class Panel_Prediction_R {
 
-	private static JLabel label;
+	private static JTextArea textArea;
 
-	public static void create(JPanel panel) {
-
-		label = new JLabel("Prediction");
-		panel.add(label);
-
-		try
-
-		{
+	public static void create(JPanel panel) throws Exception {
+		try {
 			// Creating an instance of class RCaller
 			RCaller caller = new RCaller();
 
@@ -74,5 +68,7 @@ public class Panel_Prediction {
 		{
 			System.out.println(e.toString());
 		}
+
 	}
+
 }

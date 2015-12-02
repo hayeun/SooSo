@@ -11,8 +11,14 @@ public class SooSo {
             
             @Override
             public void run() {
-                Application ex = new Application();
-                ex.setVisible(true);
+                Application ex;
+				try {
+					ex = new Application();
+	                ex.setVisible(true);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
             }
         });
 	}
